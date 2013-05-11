@@ -1,0 +1,17 @@
+[
+{
+  "modid": "BPCM",
+  "name": "BeastlyPen9uin's Couch Mod",
+  "description": "Sleep the day away, and lay on the chair while your friends explore!",
+  "version": "pre0.1",
+  "mcversion": "1.5.1",
+  "logoFile": "",
+  "url": "http://github.com/apen9uin/CouchMod",
+  "updateUrl": "",
+  "authors": ["a_pen9uin", "TheBeast5282"],
+  "credits": "",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
