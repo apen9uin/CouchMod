@@ -1,21 +1,32 @@
 package com.beastlypen9uin.couchmod.item;
 
+import com.beastlypen9uin.couchmod.CouchMod;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class ItemCouch extends Item
 {
 
-    public ItemCouch(int par1)
+    public ItemCouch(int id, int maxStackSize, CreativeTabs tab, int texture, String name)
     {
-        super(par1);
-        this.setCreativeTab(CreativeTabs.tabDecorations);
+        super(id);
+        setCreativeTab(tab);
+        setMaxStackSize(maxStackSize);
+        setUnlocalizedName(name);
+    }
+    
+    String getTextureFile()
+    {
+    	return com.beastlypen9uin.couchmod.lib.Reference.ITEMTEXTURECOUCH;
     }
     
     public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10)
@@ -81,5 +92,10 @@ public class ItemCouch extends Item
             }
         }
     }
+    
+    /*public void registerIcons(IconRegister iconRegister)
+    {
+    	Icon iconIndex = iconRegister.registerIcon("CouchMod:resources:couch.png");
+    }*/
 
 }

@@ -2,6 +2,7 @@ package com.beastlypen9uin.couchmod.block;
 
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;
+import net.minecraft.world.IBlockAccess;
 
 public class BlockCouch extends BlockDirectional
 {
@@ -31,5 +32,11 @@ public class BlockCouch extends BlockDirectional
     {
         return 14;
     }
+    
+    public boolean shouldSideBeRendered(IBlockAccess iblockaccess, int i, int j, int k, int l)
+    {
+    	return false;
+    }
+    
 
 }
