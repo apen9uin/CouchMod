@@ -1,0 +1,14 @@
+A reminder on how to export the mod:
+=====================================================================================================================
+
+First run the recompile.sh/bat
+Then run the reobfuscate.sh/bat
+Files will appear in reobf/minecraft
+Zip the folder that appears in reobf/minecraft
+Remember to add the mcmod.info file to the zip
+
+====================================================================================================================
+
+**While in development mcmod.info has to go in the root folder of the project to be seen correctly by forge**
+
+===================================================================================================================
