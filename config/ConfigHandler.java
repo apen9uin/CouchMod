@@ -2,12 +2,12 @@ package CouchMod.config;
 
 import java.io.File;
 
+import CouchMod.reference.CouchModVars;
 import net.minecraftforge.common.Configuration;
 
 public class ConfigHandler 
 {
-	public static int COUCHBLOCKID;
-  //public static String exampleString;
+	
 	
 	public static void init(File file)
 	{
@@ -15,12 +15,13 @@ public class ConfigHandler
 		
 		config.load();
 		
-		COUCHBLOCKID = config.get("blockids", "couchBlockID", 500).getInt();
+		CouchModVars.COUCHBLOCKID = config.getBlock("couchBlockID", 4000).getInt();
+		CouchModVars.COUCHLEATHERID = config.getItem("couchLeatherID", 5000).getInt() - 256;
+		CouchModVars.COUCHITEMID = config.getItem("couchItemID", 5001).getInt() - 256;
+		
       //exampleString = config.get("example category", "example var", "example standard value").getString();		
       //Here's an example to read things for future reference 		
 		config.save();
-		
-		System.out.println("Set CouchBlock blockID as " + COUCHBLOCKID);
 	}
 
 }

@@ -1,6 +1,7 @@
 package CouchMod;
 
 import CouchMod.config.ConfigHandler;
+import CouchMod.item.Items;
 import CouchMod.network.PacketHandler;
 import CouchMod.proxy.CommonProxy;
 import CouchMod.reference.CouchModVars;
@@ -28,6 +29,7 @@ public class CouchMod
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
+		Items.init();
 		proxy.initSounds();
 		proxy.initRenderers();
 	}
@@ -35,7 +37,8 @@ public class CouchMod
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-		
+		Items.addNames();
+		Items.registerRecipes();
 	}
 	
 	@EventHandler
