@@ -11,4 +11,4 @@ Remember to add the mcmod.info file to the zip
 
 **While in development mcmod.info has to go in the root folder of the project to be seen correctly by forge**
 
-===================================================================================================================
+====================================================================================================================
