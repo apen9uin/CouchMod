@@ -5,7 +5,8 @@ First run the recompile.sh/bat
 Then run the reobfuscate.sh/bat
 Files will appear in reobf/minecraft
 Zip the folder that appears in reobf/minecraft
-Remember to add the mcmod.info file to the zip
+Remember to add the mcmod.info file to the root folder of the zip
+The src/minecraft/assets folder also goes in the root folder of the zip
 
 ====================================================================================================================
 
