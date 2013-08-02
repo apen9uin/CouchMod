@@ -15,9 +15,9 @@ public class ConfigHandler
 		
 		config.load();
 		
-		CouchModVars.COUCHBLOCKID = config.getBlock("couchBlockID", 4000).getInt();
-		CouchModVars.COUCHLEATHERID = config.getItem("couchLeatherID", 5000).getInt() - 256;
-		CouchModVars.COUCHITEMID = config.getItem("couchItemID", 5001).getInt() - 256;
+		CouchModVars.COUCHBLOCKID = config.getBlock("couchBlockID", 5000).getInt();
+		CouchModVars.COUCHCUSHIONID = config.getItem("couchLeatherID", 5001).getInt() - 256;
+		CouchModVars.COUCHITEMID = config.getItem("couchItemID", 5002).getInt() - 256;
 		
       //exampleString = config.get("example category", "example var", "example standard value").getString();		
       //Here's an example to read things for future reference 		

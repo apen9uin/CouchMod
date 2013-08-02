@@ -10,18 +10,18 @@ public class CouchModVars
 	public static final String CHANNEL                 = "couchChannel";
 	
 	//Names for items
-	public static final String COUCHLEATHERUNLOCALNAME = "couchLeather";
-	public static final String COCUHLEATHERLOCALNAME   = "Couch Leather";
+	public static final String COUCHCUSHIONUNLOCALNAME = "couchLeather";
+	public static final String COCUHCUSHIONLOCALNAME   = "Couch Leather";
 	public static final String COUCHUNLOCALNAME        = "couchItem";
 	public static final String COUCHLOCALNAME          = "Couch";
 	
 	//Textures
 	public static final String TEXTURES_LOCATION       = "couchmod";
-	public static final String COUCHLEATHERICON        = "couchLeatherIcon";
+	public static final String COUCHCUSHIONICON        = "couchLeatherIcon";
 	public static final String COUCHITEM               = "couchItemIcon";
 	
 	//Item and Block IDs
-	public static       int    COUCHLEATHERID;
+	public static       int    COUCHCUSHIONID;
 	public static       int    COUCHITEMID;
 	public static       int    COUCHBLOCKID;
 

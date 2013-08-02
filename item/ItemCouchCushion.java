@@ -10,14 +10,14 @@ import CouchMod.reference.CouchModVars;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemCouchLeather extends Item
+public class ItemCouchCushion extends Item
 {
-	public ItemCouchLeather(int id)
+	public ItemCouchCushion(int id)
 	{
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
 		setMaxStackSize(4);
-		setUnlocalizedName(CouchModVars.COUCHLEATHERUNLOCALNAME);
+		setUnlocalizedName(CouchModVars.COUCHCUSHIONUNLOCALNAME);
 	}
 	
 	//Just not what it's actually used for just testing that I made the item right
@@ -36,7 +36,7 @@ public class ItemCouchLeather extends Item
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register)
 	{
-		itemIcon = register.registerIcon(CouchModVars.TEXTURES_LOCATION + ":" + CouchModVars.COUCHLEATHERICON);
+		itemIcon = register.registerIcon(CouchModVars.TEXTURES_LOCATION + ":" + CouchModVars.COUCHCUSHIONICON);
 		
 	}
 	

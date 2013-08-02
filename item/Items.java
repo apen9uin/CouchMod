@@ -9,29 +9,30 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Items 
 {
-	public static Item couchLeather;
+	public static Item couchCushion;
 	public static Item couchItem;
 	
 	public static void init()
 	{
-		couchLeather = new ItemCouchLeather(CouchModVars.COUCHLEATHERID);
+		couchCushion = new ItemCouchCushion(CouchModVars.COUCHCUSHIONID);
 		couchItem = new ItemCouch(CouchModVars.COUCHITEMID);
 	}
 	
 	public static void addNames()
 	{
-		LanguageRegistry.addName(couchLeather, CouchModVars.COCUHLEATHERLOCALNAME);
+		LanguageRegistry.addName(couchCushion, CouchModVars.COCUHCUSHIONLOCALNAME);
 		LanguageRegistry.addName(couchItem, CouchModVars.COUCHLOCALNAME);
 	}
 	
 	public static void registerRecipes()
 	{
-		GameRegistry.addRecipe(new ItemStack(couchLeather), 
+		GameRegistry.addRecipe(new ItemStack(couchCushion), 
 				new Object[] { "XXX",
-						       "XXX",
+						       "XWX",
 						       "XXX",
 						       
-						       'X', Item.leather
+						       'X', Item.leather,
+						       'W', Block.cloth
 		                     });
 		
 		GameRegistry.addRecipe(new ItemStack(couchItem),
@@ -39,7 +40,7 @@ public class Items
 			                   "L L",
 			                   "WWW",
 			                   
-			                   'L', couchLeather,
+			                   'L', couchCushion,
 			                   'W', Block.planks
 		                      });
 	}
